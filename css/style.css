@@ -1,0 +1,61 @@
+:root {
+  --main-color: #a3c1ef;
+  --text-color-blue: #163561;
+  --color-white: #fff;
+}
+
+body {
+  font-family: 'Catamaran', sans-serif;
+}
+
+/* =============== COMPONENTS ===============*/
+
+.container {
+  width: 1920px;
+}
+
+/* =============== END COMPONENTS ===============*/
+
+/* =============== HEADER ===============*/
+.header .container {
+  display: flex;
+  padding-left: 173px;
+}
+
+.logo {
+  margin-top: 11px;
+  margin-right: 110px;
+}
+
+.nav-list {
+  display: flex;
+  font-size: 25px;
+  line-height: 1.32;
+}
+
+.nav-list-item {
+  color: var(--text-color-blue);
+  margin-right: 20px;
+}
+
+.nav-list-item:last-child {
+  margin-right: 0;
+}
+
+.nav-list-item a {
+  display: block;
+  padding: 67px 14px 8px;
+}
+
+.nav-list-item a:hover,
+.nav-list-item a:focus {
+  color: var(--color-white);
+  background-color: var(--main-color);
+  border-radius: 0 0 5px 5px;
+}
+
+.userMenu-list {
+  display: flex;
+}
+
+/* =============== END HEADER ===============*/
