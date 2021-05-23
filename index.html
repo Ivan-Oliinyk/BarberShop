@@ -14,16 +14,14 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- HEADER -->
+    <header class="header" id="header">
       <div class="container">
         <div class="logo">
-          <img src="./images/logo.svg" alt="Ножницы" width="74" height="65" />
-          <img
-            src="./images/arber.svg"
-            alt="Текст логотипа"
-            width="91"
-            height="53"
-          />
+          <svg width="74" height="65">
+            <use href="./images/icons.svg#icon-scissors"></use>
+          </svg>
+          arder
         </div>
         <nav>
           <ul class="nav-list">
@@ -44,51 +42,166 @@
         <ul class="userMenu-list">
           <li>
             <button type="">
-              <img
-                src="./images/profile.svg"
-                alt="картинка профиль"
-                width="42"
-                height="42"
-              />
+              <svg width="42" height="42">
+                <use href="./images/icons.svg#icon-profile"></use>
+              </svg>
             </button>
           </li>
           <li>
             <button type="button">
-              <img
-                src="./images/notification.svg"
-                alt="картинка аутентификация"
-                width="42"
-                height="42"
-              />
+              <svg width="42" height="42">
+                <use href="./images/icons.svg#icon-notification"></use>
+              </svg>
             </button>
           </li>
           <li>
-            <button type="button">Appointment</button>
+            <button class="btn" type="button">Appointment</button>
           </li>
         </ul>
       </div>
     </header>
+    <!-- END HEADER -->
+
     <main>
+
+      <!-- HERO -->
       <section>
-        <div>
-          <h1>
-            <span>Hairstyle</span>
-            ReflectsThe PersonalityInside You
-          </h1>
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page w hen looking at.
-          </p>
-          <button type="button">Get Started</button>
-        </div>
-        <img
-          src="./images/hero.svg"
-          alt="Два мастера подстрегает и броют клиентов"
-          width="1234"
-          height="821"
-        />
+        <div class="hero container">
+          <div class="hero-content">
+            <h1>
+              <span>Hairstyle</span> Reflects The Personality Inside You
+            </h1>
+            <p class="text">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page w hen looking at.
+            </p>
+            <button class="btn" type="button">Get Started</button>
+          </div>
+          <!-- <div class="bg-img"></div> -->
       </section>
+      <!-- END HERO -->
+
+      <!-- OUR-HISTORY -->
+      <section class="our-history">
+        <div class="container">
+            <h2>Our <span>History</span></h2>
+            <ul>
+              <li class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at.</li>
+              <li class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at.</li>
+            </ul>
+            <button class="btn" type="button">Learn more</button>
+        </div>
+      </section>
+      <!-- END-OUR-HISTORY -->
+
+      <!-- SERVISE -->
+      <section class="servise">
+        <div class="container">
+          <h2>Services We <br><span>Provide</span></h2>
+          <ul class="servise-items">
+            <li class="servise-list">
+              <div class="img-container">
+                <svg width="65" height="68">
+                  <use href="./images/icons.svg#icon-scissors-two"></use>
+                </svg>
+              </div>
+              <h3>Hair Cut</h3>
+              <p>long established fact that a reacted by the readable content of
+              hen looking at.</p>
+            </li>
+            <li class="servise-list">
+              <div class="img-container">
+                <svg width="68" height="68">
+                  <use href="./images/icons.svg#icon-beard-cut"></use>
+                </svg>
+              </div>
+              <h3>Beard Cut</h3>
+              <p>long established fact that a reacted by the readable content of
+              hen looking at.</p>
+            </li>
+            <li class="servise-list">
+              <div class="img-container">
+                <svg width="66" height="66">
+                  <use href="./images/icons.svg#icon-facial-pack"></use>
+                </svg>
+              </div>
+              <h3>Facial Pack</h3>
+              <p>long established fact that a reacted by the readable content of
+              hen looking at.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--END SERVISE -->
+
+      <!--GALLERY -->
+      <section class="our-gallery">
+        <div class="container"> 
+          <h2>Our <span>Gallery</span></h2>
+          <ul class="photo-gallary">
+            <li class="photo-gallary-item">
+              <img src="./images/img-gallery-1.jpg" alt="Фото процедуры в BarberShop" width="435" height="435">
+              <div class="bg-photo-gallary"></div>
+            </li>
+            <li class="photo-gallary-item">
+              <img src="./images/img-gallery-2.jpg" alt="Фото процедуры в BarberShop" width="435" height="435">
+              <div class="bg-photo-gallary"></div>
+            </li>
+            <li class="photo-gallary-item">
+              <img src="./images/img-gallery-3.jpg" alt="Фото процедуры в BarberShop" width="435" height="435">
+              <div class="bg-photo-gallary"></div>
+            </li>
+            <li class="photo-gallary-item">
+              <img src="./images/img-gallery-4.jpg" alt="Фото процедуры в BarberShop" width="435" height="435">
+              <div class="bg-photo-gallary"></div>
+            </li>
+            <li class="photo-gallary-item">
+              <img src="./images/img-gallery-5.jpg" alt="Фото процедуры в BarberShop" width="435" height="435">
+              <div class="bg-photo-gallary"></div>
+            </li>
+            <li class="photo-gallary-item">
+              <img src="./images/img-gallery-6.jpg" alt="Фото процедуры в BarberShop" width="435" height="435">
+              <div class="bg-photo-gallary"></div>
+            </li>
+          </ul>
+          <button class="btn" type="button">View All</button>
+        </div>
+      </section>
+      <!--END-GALLERY -->
+
     </main>
-    <footer></footer>
+
+    <!--FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <a class="logo" href="#header">
+            <svg class="logo-img" width="110" height="97">
+              <use href="./images/icons.svg#icon-scissors"></use>
+            </svg>
+            arder
+          </a>
+          <p class="text">It is a long established fact that a reader will be <br>distracted by the readable </p>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <svg width="19" height="38">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li class="footer-list-item">
+              <svg width="31" height="25">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+            <li class="footer-list-item">
+              <svg width="28" height="29">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+          </ul>
+          <div class="footer-line"></div>
+        </div>
+      </footer>
+    <!--ENDFOOTER -->
+    
   </body>
 </html>

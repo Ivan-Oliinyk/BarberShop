@@ -208,6 +208,10 @@ button,
 select {
   /* 1 */
   text-transform: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /**
@@ -311,4 +315,9 @@ Add the correct display in Chrome and Safari.
 
 summary {
   display: list-item;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
