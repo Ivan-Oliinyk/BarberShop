@@ -326,10 +326,6 @@ body {
 /* =============== END GALLERY ===============*/
 
 /* =============== FOTTER ===============*/
-.footer {
-  padding-bottom: 98px;
-}
-
 .footer .container {
   background: url(../images/bg-left-bottom.png) left 5%,
     url(../images/bg-right-bottom.png) right -5%;
